@@ -1,7 +1,6 @@
 let buttonOpt = document.querySelectorAll(".button-option");
 let popup = document.querySelector(".popup");
 let newGame = document.getElementById("new-game");
-let restart = document.getElementById("restart");
 let mssg = document.getElementById("message");
 let winningPattern = [
   [0, 1, 2],
@@ -69,7 +68,6 @@ buttonOpt.forEach((element) => {
       element.disabled = true;
     } else {
       xTurn = true;
-      //Display Y
       element.innerText = "O";
       element.disabled = true;
     }
